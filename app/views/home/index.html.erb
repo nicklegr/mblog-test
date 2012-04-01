@@ -1,0 +1,15 @@
+<h1>Home#index</h1>
+<%= link_to "My Blog", posts_path %>
+
+
+<% @posts.each do |post| %>
+ <div class="content">
+    <%= post.content %>
+ </div>
+<% end %>
+
+
+<br />
+
+<%= link_to 'New Post', new_post_path %>
+
